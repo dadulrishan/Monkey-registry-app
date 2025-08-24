@@ -1,5 +1,6 @@
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Toaster } from '@/components/ui/sonner'
 
 export const metadata = {
   title: '🐒 Monkey Registry - Track & Discover Primates',
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="bg-background">
         {children}
+        <Toaster />
       </body>
     </html>
   )
