@@ -11,8 +11,8 @@ from datetime import datetime, date
 import sys
 import os
 
-# Get the base URL from environment
-BASE_URL = os.getenv('NEXT_PUBLIC_BASE_URL', 'https://banana-base.preview.emergentagent.com')
+# Use localhost for testing since we're testing from inside the container
+BASE_URL = "http://localhost:3000"
 API_BASE = f"{BASE_URL}/api"
 
 print(f"Testing API at: {API_BASE}")
