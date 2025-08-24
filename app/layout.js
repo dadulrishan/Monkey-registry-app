@@ -1,14 +1,18 @@
 import './globals.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export const metadata = {
-  title: 'Next.js MongoDB Template',
-  description: 'A simple template with App Router, MongoDB, and shadcn/ui',
+  title: '🐒 Monkey Registry - Track & Discover Primates',
+  description: 'A comprehensive monkey registry with AI-powered descriptions and elegant management tools',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
+      <head>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐒</text></svg>" />
+      </head>
+      <body className="bg-background">
         {children}
       </body>
     </html>
